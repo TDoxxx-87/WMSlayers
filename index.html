@@ -202,8 +202,7 @@
         var Geleande = L.tileLayer.wms("https://isk.geobasis-bb.de/mapproxy/dgm/service/wms", { layers: 'dgm', format: 'image/png', transparent: true, attribution: '<a href="https://isk.geobasis-bb.de/mapproxy/dgm/service/wms?">dgm</a>', opacity: 1.0 });
         var SCH = L.tileLayer.wms("https://isk.geobasis-bb.de/mapproxy/schmettau/service/wms", { layers: 'schmettau', format: 'image/png', transparent: true, attribution: '<a href="https://isk.geobasis-bb.de/mapproxy/schmettau/service/wms?">schmettau</a>', opacity: 1.0 });
         var DOP1997 = L.tileLayer.wms("https://isk.geobasis-bb.de/mapproxy/dop50g_1992_1997/service/wms", { layers: 'bb_dop50g_1992_1997', format: 'image/png', transparent: true, attribution: '<a href="https://isk.geobasis-bb.de/mapproxy/dop50g_1992_1997/service/wms?">bb_dop50g_1992_1997</a>', opacity: 1.0 });
-        var alkis_flur = L.tileLayer.wms("https://isk.geobasis-bb.de/ows/alkis_flur_wms?", { layers: 'alkis_flur', format: 'image/png', transparent: true, attribution: '<a href="https://isk.geobasis-bb.de/ows/alkis_flur_wms?">ALKIS Flur</a>', opacity: 1.0 });
-        var aktualitaeten = L.tileLayer.wms("https://isk.geobasis-bb.de/ows/aktualitaeten_wms?", { layers: 'aktualitaeten', format: 'image/png', transparent: true, attribution: '<a href="https://isk.geobasis-bb.de/ows/aktualitaeten_wms?">Aktualitäten</a>', opacity: 1.0 });
+        var alkis_flur = L.tileLayer.wms("https://isk.geobasis-bb.de/ows/alkis_wms?", { layers: 'SW', format: 'image/png', transparent: true, attribution: '<a href="https://isk.geobasis-bb.de/ows/alkis_flur_wms?">ALKIS Flur</a>', opacity: 1.0 });
         var dop20_2019_2021 = L.tileLayer.wms("https://isk.geobasis-bb.de/mapproxy/dop20_2019_2021/service/wms?", { layers: 'dop20_bebb_2019_2021_farbe', format: 'image/png', transparent: true, attribution: '<a href="https://isk.geobasis-bb.de/mapproxy/dop20_2019_2021/service/wms?">DOP20 2019-2021</a>', opacity: 1.0 });
         var dop20_2016_2018 = L.tileLayer.wms("https://isk.geobasis-bb.de/mapproxy/dop20_bebb_2016_2018_farbe/service/wms?", { layers: 'dop20_bebb_2016_2018_graustufen', format: 'image/png', transparent: true, attribution: '<a href="https://isk.geobasis-bb.de/mapproxy/dop20_2016_2018/service/wms?">DOP20 2016-2018</a>', opacity: 1.0 });
         var dop20_2013_2015 = L.tileLayer.wms("https://isk.geobasis-bb.de/mapproxy/dop20_2013_2015/service/wms?", { layers: 'dop20_bebb_2013_2015_farbe', format: 'image/png', transparent: true, attribution: '<a href="https://isk.geobasis-bb.de/mapproxy/dop20_2013_2015/service/wms?">DOP20 2013-2015</a>', opacity: 1.0 });
@@ -228,7 +227,6 @@
             {label: "Schmettau Karte", layer: SCH },
             {label: "Orthophotos 1997", layer: DOP1997 },
             {label: "ALKIS Flur (WMS)", layer: alkis_flur },
-            {label: "Aktualitäten (WMS)", layer: aktualitaeten },
             {label: "DOP20 2019-2021", layer: dop20_2019_2021 },
             {label: "DOP20 2016-2018", layer: dop20_2016_2018 },
             {label: "DOP20 2013-2015", layer: dop20_2013_2015 },
